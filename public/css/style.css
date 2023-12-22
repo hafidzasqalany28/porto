@@ -70,6 +70,69 @@ h6 {
   font-size: 16px;
 }
 
+/* Skill Section Begin */
+.skill-section {
+  background: #100028;
+  padding-bottom: 50px;
+  padding-top: 110px;
+}
+
+.skill-item {
+  background: rgba(27, 27, 50, 0.8); /* Nilai alpha untuk transparansi */
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.skill-title {
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.skill-text {
+  font-size: 16px;
+  font-weight: 300;
+  color: #adadad;
+  display: block;
+}
+
+.skill-description {
+  margin-bottom: 8px;
+}
+
+.skill-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-list-item {
+  margin-bottom: 15px;
+}
+
+.skill-progress {
+  height: 8px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.progress-bar {
+  border-radius: 5px;
+}
+
+/* Hover effect */
+.skill-item:hover {
+  background: rgba(27, 27, 50, 0.9); /* Nilai alpha untuk transparansi saat hover */
+  transition: background 0.3s ease;
+}
+
+/* Skill Section End */
+
+
+
 p {
   font-size: 16px;
   font-family: "Josefin Sans", sans-serif;
@@ -716,15 +779,19 @@ ol {
   position: relative;
   overflow: hidden;
 }
-.team__item:hover .team__item__text {
+
+.team__item .team__item__text {
   bottom: 0;
 }
+
 .team__item.team__item--second {
   margin-top: -60px;
 }
+
 .team__item.team__item--third {
   margin-top: -120px;
 }
+
 .team__item.team__item--four {
   margin-top: -180px;
 }
@@ -733,14 +800,16 @@ ol {
   text-align: center;
   position: absolute;
   left: 0;
-  bottom: -500px;
+  top: 0;
   width: 100%;
-  padding: 50px 0 30px;
+  padding: 20px 20px; /* Tambahkan padding kanan dan kiri di sini */
   z-index: 1;
   -webkit-transition: all, 0.5s;
   -o-transition: all, 0.5s;
   transition: all, 0.5s;
 }
+
+
 .team__item__text:before {
   position: absolute;
   left: 0;
@@ -751,6 +820,7 @@ ol {
   content: "";
   z-index: -1;
 }
+
 .team__item__text h4 {
   font-size: 22px;
   color: #ffffff;
@@ -758,17 +828,20 @@ ol {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
+
 .team__item__text p {
   color: #ffffff;
-  font-weight: 300px;
+  font-weight: 300;
   margin-bottom: 12px;
 }
+
 .team__item__text .team__item__social a {
   color: #ffffff;
   display: inline-block;
   font-size: 15px;
   margin-right: 18px;
 }
+
 .team__item__text .team__item__social a:last-child {
   margin-right: 0;
 }
@@ -778,6 +851,8 @@ ol {
   right: 0;
   bottom: 0;
 }
+
+
 
 /*---------------------
   Latest
@@ -1294,7 +1369,7 @@ ol {
   position: absolute;
   right: -16px;
   top: 0;
-  content: "/";
+  content: "";
 }
 .portfolio__item__text ul li:last-child {
   margin-right: 0;
@@ -1342,6 +1417,32 @@ ol {
   display: inline-block;
   margin-right: 6px;
 }
+
+/* add portfolio custom */
+.portfolio__item__text h4 a {
+  color: #ffffff; /* Warna teks default */
+  text-decoration: none; /* Menghapus dekorasi tautan */
+  transition: color 0.3s ease; /* Efek transisi untuk memberikan umpan balik visual */
+}
+
+.portfolio__item__text h4 a:hover,
+.portfolio__item__text h4 a:active {
+  color: #00bfe7; /* Warna teks saat dihover atau di-klik */
+}
+
+.portfolio__item__text p,
+.portfolio__item__text ul li,
+.portfolio__item__text span,
+.portfolio__item__text a {
+  color: #adadad; /* Warna teks lainnya */
+}
+
+.portfolio__item__text a:hover,
+.portfolio__item__text a:active {
+  color: #00bfe7;
+
+}
+/* add portfolio custom end*/
 
 /*---------------------
     Blog

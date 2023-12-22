@@ -52,6 +52,135 @@
 </section>
 <!-- About Section End -->
 
+<!-- Work Experience Section Begin -->
+<section class="team spad set-bg" data-setbg="img/team-bg.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title center-title">
+                    <span>Professional Journey</span>
+                    <h2>Work Experience</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center align-items-center">
+            @foreach($experiences as $experience)
+            <div class="col-lg-3 mx-4 col-md-6 col-sm-6 p-0">
+                <div class="team__item set-bg" data-setbg="{{ $experience['image'] ?? asset('img/bg1.jpg') }}">
+                    <div class="team__item__text text-center">
+                        <h4>{{ $experience['title'] }}</h4>
+                        <p>{{ $experience['company'] }}</p>
+                        <p>{{ $experience['start_date'] }} - {{ $experience['end_date'] ?: 'Present' }}</p>
+                        <p>{{ $experience['description'] }}</p>
+                    </div>
+                </div>
+            </div>
+            @endforeach
+            <div class="col-lg-12 p-5 text-center">
+                <div class="team__btn">
+                    <a href="#" class="primary-btn">View All Experiences</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- Work Experience Section End -->
+
+<!-- Skill Section Begin -->
+<section class="skill-section spad set-bg" data-setbg="{{ asset('img/bg1.jpg') }}">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title left-title">
+                    <span>My Expertise</span>
+                    <h2>Skills</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Frontend Development -->
+            <div class="col-lg-4">
+                <div class="skill-item">
+                    <div class="skill-text">
+                        <h4 class="skill-title">Frontend Development</h4>
+                        <p class="skill-description">Languages and Technologies:</p>
+                        <ul class="skill-list">
+                            <li class="skill-list-item">HTML
+                                <div class="progress skill-progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 80%;"></div>
+                                </div>
+                            </li>
+                            <li class="skill-list-item">CSS3
+                                <div class="progress skill-progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 80%;"></div>
+                                </div>
+                            </li>
+                            <li class="skill-list-item">JavaScript
+                                <div class="progress skill-progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 80%;"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Backend Development -->
+            <div class="col-lg-4">
+                <div class="skill-item">
+                    <div class="skill-text">
+                        <h4 class="skill-title">Backend Development</h4>
+                        <p class="skill-description">Languages and Frameworks:</p>
+                        <ul class="skill-list">
+                            <li class="skill-list-item">JavaScript
+                                <div class="progress skill-progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%;"></div>
+                                </div>
+                            </li>
+                            <li class="skill-list-item">PHP (Laravel)
+                                <div class="progress skill-progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%;"></div>
+                                </div>
+                            </li>
+                            <li class="skill-list-item">Python
+                                <div class="progress skill-progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%;"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- IoT (Internet of Things) -->
+            <div class="col-lg-4">
+                <div class="skill-item">
+                    <div class="skill-text">
+                        <h4 class="skill-title">IoT (Internet of Things)</h4>
+                        <p class="skill-description">Technologies and Protocols:</p>
+                        <ul class="skill-list">
+                            <li class="skill-list-item">MQTT
+                                <div class="progress skill-progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 70%;"></div>
+                                </div>
+                            </li>
+                            <li class="skill-list-item">Arduino
+                                <div class="progress skill-progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 70%;"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Skill Section End -->
+
+
+{{--
 <!-- Testimonial Section Begin -->
 <section class="testimonial spad set-bg" data-setbg="{{ asset('img/testimonial-bg.jpg') }}">
     <div class="container">
@@ -87,7 +216,7 @@
         </div>
     </div>
 </section>
-<!-- Testimonial Section End -->
+<!-- Testimonial Section End --> --}}
 
 <!-- Counter Section Begin -->
 <section class="counter">
@@ -98,8 +227,8 @@
                     <div class="counter__item">
                         <div class="counter__item__text">
                             <img src="{{ asset('img/icons/ci-1.png') }}" alt="">
-                            <h2 class="counter_num">230</h2>
-                            <p>Completed Projects</p>
+                            <h2 class="counter_num">7</h2>
+                            <p>Projects Taken</p>
                         </div>
                     </div>
                 </div>
@@ -107,7 +236,7 @@
                     <div class="counter__item second__item">
                         <div class="counter__item__text">
                             <img src="{{ asset('img/icons/ci-2.png') }}" alt="">
-                            <h2 class="counter_num">1068</h2>
+                            <h2 class="counter_num">7</h2>
                             <p>Happy clients</p>
                         </div>
                     </div>
@@ -116,7 +245,7 @@
                     <div class="counter__item third__item">
                         <div class="counter__item__text">
                             <img src="{{ asset('img/icons/ci-3.png') }}" alt="">
-                            <h2 class="counter_num">230</h2>
+                            <h2 class="counter_num">7</h2>
                             <p>Perspective clients</p>
                         </div>
                     </div>
@@ -125,7 +254,7 @@
                     <div class="counter__item four__item">
                         <div class="counter__item__text">
                             <img src="{{ asset('img/icons/ci-4.png') }}" alt="">
-                            <h2 class="counter_num">230</h2>
+                            <h2 class="counter_num">7</h2>
                             <p>Completed Projects</p>
                         </div>
                     </div>

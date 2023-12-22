@@ -4,7 +4,10 @@
         <div class="row">
             <div class="col-lg-2">
                 <div class="header__logo">
-                    <a href="{{ route('home') }}"><img src="img/logo.png" alt=""></a>
+                    <a href="{{ route('home') }}" style="display: flex; align-items: center;">
+                        <img src="img/logo1.png" alt="" style="height: 50px;">
+                        <span style="margin-left: 10px; font-size: 20px; color: #fff;">hafidzasqalany28</span>
+                    </a>
                 </div>
             </div>
             <div class="col-lg-10">
@@ -23,7 +26,7 @@
                             <li class="{{ request()->routeIs('services') ? 'active' : '' }}">
                                 <a href="{{ route('services') }}">Services</a>
                             </li>
-                            <li><a href="#">Pages</a>
+                            {{-- <li><a href="#">Pages</a>
                                 <ul class="dropdown">
                                     <li class="{{ request()->routeIs('about') ? 'active' : '' }}">
                                         <a href="{{ route('about') }}">About</a>
@@ -31,14 +34,14 @@
                                     <li class="{{ request()->routeIs('portfolio') ? 'active' : '' }}">
                                         <a href="{{ route('portfolio') }}">Portfolio</a>
                                     </li>
-                                    {{-- <li class="{{ request()->routeIs('blog') ? 'active' : '' }}">
+                                    <li class="{{ request()->routeIs('blog') ? 'active' : '' }}">
                                         <a href="{{ route('blog') }}">Blog</a>
                                     </li>
                                     <li class="{{ request()->routeIs('blog-details') ? 'active' : '' }}">
                                         <a href="{{ route('blog-details') }}">Blog Details</a>
-                                    </li> --}}
+                                    </li>
                                 </ul>
-                            </li>
+                            </li> --}}
                             <li class="{{ request()->routeIs('contact') ? 'active' : '' }}">
                                 <a href="{{ route('contact') }}">Contact</a>
                             </li>
