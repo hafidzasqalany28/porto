@@ -1442,6 +1442,11 @@ ol {
   color: #00bfe7;
 
 }
+/* styles.css atau file CSS utama Anda */
+.portfolio__img .portfolio-image {
+  margin-bottom: 30px; /* Sesuaikan nilai sesuai kebutuhan */
+}
+
 /* add portfolio custom end*/
 
 /*---------------------

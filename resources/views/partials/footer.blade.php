@@ -6,7 +6,7 @@
                 <div class="col-lg-6 col-md-6">
                     <div class="footer__top__logo">
                         <a href="{{ route('home') }}" style="display: flex; align-items: center;">
-                            <img src="img/logo1.png" alt="" style="height: 50px;">
+                            <img src="{{ asset('img/logo1.png') }}" alt="" style="height: 50px;">
                             <span style="margin-left: 10px; font-size: 20px; color: #fff;">hafidzasqalany28</span>
                         </a>
                     </div>

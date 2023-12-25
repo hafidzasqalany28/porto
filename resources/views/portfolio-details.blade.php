@@ -1,5 +1,3 @@
-<!-- resources/views/portfolio/show.blade.php -->
-
 @extends('layouts.master')
 
 @section('content')
@@ -10,7 +8,11 @@
             <p>{{ $portfolio->description }}</p>
         </div>
         <div class="portfolio__img">
-            <img src="{{ asset('img/portfolio/' . $portfolio->image) }}" alt="{{ $portfolio->title }}">
+            @foreach($images as $image)
+            <img class="portfolio-image"
+                src="{{ asset('img/portfolio/' . $portfolio->title . '/' . pathinfo($image->getFilename(), PATHINFO_BASENAME)) }}"
+                alt="{{ $portfolio->title }}">
+            @endforeach
         </div>
     </div>
 </section>

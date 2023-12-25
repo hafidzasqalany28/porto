@@ -12,48 +12,48 @@ class PortfolioSeeder extends Seeder
         // Example portfolios
         $portfolios = [
             [
-                'title' => 'Project 1',
-                'description' => 'Description for Project 1.',
+                'title' => 'PLBN-SOTA',
+                'description' => 'Description Comingsoon.',
                 'image' => 'portfolio-1.jpg',
-                'youtube_link' => 'https://www.youtube.com/watch?v=LXb3EKWsInQ',
-                'website_link' => 'https://www.example.com/project1',
-                'github_link' => 'https://github.com/username/project1',
+                'youtube_link' => 'https://www.youtube.com/embed/9jo51nJrO0k?si=PSKnvn6I9PLrlPDN',
+                'website_link' => 'https://plbnsota.com/',
+                'github_link' => 'https://github.com/Jaenulatif/plbn-sota',
                 'category' => 'Web', // Adjust the category
             ],
             [
-                'title' => 'Project 2',
-                'description' => 'Description for Project 2.',
+                'title' => 'YAMAI-ATID',
+                'description' => 'Description Comingsoon.',
                 'image' => 'portfolio-2.jpg',
-                'youtube_link' => 'https://www.youtube.com/watch?v=ABCDEFGHIJK',
-                'website_link' => 'https://www.example.com/project2',
-                'github_link' => 'https://github.com/username/project2',
-                'category' => 'IOT', // Adjust the category
+                'youtube_link' => 'https://www.youtube.com/embed/9jo51nJrO0k?si=PSKnvn6I9PLrlPDN',
+                'website_link' => 'https://yamai-atid.site/',
+                'github_link' => 'https://github.com/hafidzasqalany28/yamai-atid',
+                'category' => 'Web', // Adjust the category
             ],
             [
-                'title' => 'Project 3',
-                'description' => 'Description for Project 3.',
+                'title' => 'OMART',
+                'description' => 'Description Comingsoon.',
                 'image' => 'portfolio-3.jpg',
-                'youtube_link' => 'https://www.youtube.com/watch?v=ABCDEFGHIJK',
-                'website_link' => 'https://www.example.com/project3',
-                'github_link' => 'https://github.com/username/project3',
+                'youtube_link' => 'https://www.youtube.com/embed/9jo51nJrO0k?si=PSKnvn6I9PLrlPDN',
+                'website_link' => 'https://finalprojectx.site/',
+                'github_link' => 'https://github.com/hafidzasqalany28/omart',
                 'category' => 'eCommerce', // Adjust the category
             ],
             [
-                'title' => 'Project 4',
-                'description' => 'Description for Project 4.',
+                'title' => 'CRM',
+                'description' => 'Description Comingsoon.',
                 'image' => 'portfolio-4.jpg',
-                'youtube_link' => 'https://www.youtube.com/watch?v=ABCDEFGHIJK',
-                'website_link' => 'https://www.example.com/project4',
-                'github_link' => 'https://github.com/username/project4',
+                'youtube_link' => 'https://www.youtube.com/embed/9jo51nJrO0k?si=PSKnvn6I9PLrlPDN',
+                'website_link' => 'https://crm-ubijalar.finalprojectx.site/',
+                'github_link' => 'https://github.com/hafidzasqalany28/CRM',
                 'category' => 'eCommerce', // Adjust the category
             ],
             [
-                'title' => 'Project 5',
-                'description' => 'Description for Project 5.',
+                'title' => 'MARO-BARBERSHOP',
+                'description' => 'Description Comingsoon.',
                 'image' => 'portfolio-5.jpg',
-                'youtube_link' => 'https://www.youtube.com/watch?v=ABCDEFGHIJK',
-                'website_link' => 'https://www.example.com/project5',
-                'github_link' => 'https://github.com/username/project5',
+                'youtube_link' => 'https://www.youtube.com/embed/9jo51nJrO0k?si=PSKnvn6I9PLrlPDN',
+                'website_link' => 'https://maro-barbershop.finalprojectx.site/',
+                'github_link' => 'https://github.com/hafidzasqalany28/maro-barbershop',
                 'category' => 'Web', // Adjust the category
             ],
             // Add more projects as needed
