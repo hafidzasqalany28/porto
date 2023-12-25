@@ -13,24 +13,24 @@ class ExperienceSeeder extends Seeder
         $experiences = [
             [
                 'title' => 'Front End Developer',
-                'description' => 'Melakukan pembaruan pada tampilan website profil perusahaan PT. Surabaya Noor Leather. Merancang Database baru untuk Kerajinan Kulit pada perusahaan.',
+                'description' => 'Performed updates on the website interface for PT. Surabaya Noor Leather company profile. Designed a new Database for Leather Crafts at the company.',
                 'company' => 'PT. SURABAYA NOOR LEATHER',
                 'start_date' => '2020-09-01',
                 'end_date' => '2020-10-01',
             ],
             [
-                'title' => 'Staff Administrasi Umum',
-                'description' => 'Membuat dokumen terkait proses ekspor barang, membuat laporan keuangan harian dan bulanan perusahaan, menghandle pajak pph 21, pph 22, dan pph 23 perusahaan.',
+                'title' => 'Administration Staff',
+                'description' => 'Created documents related to the export process, generated daily and monthly financial reports for the company, handled taxes such as PPH 21, PPH 22, and PPH 23 for the company.',
                 'company' => 'PT. BAWAZIR INDO UTAMA',
                 'start_date' => '2022-11-01',
-                'end_date' => null, // Saat ini masih bekerja
+                'end_date' => null, // Currently still employed
             ],
             [
                 'title' => 'Full Stack Developer',
-                'description' => 'Mengembangkan proyek perangkat lunak, merancang antarmuka pengguna responsif menggunakan HTML, CSS, dan JavaScript (Bootstrap), serta membangun server dan logika bisnis menggunakan JavaScript (Node.js) dan PHP (Laravel).',
+                'description' => 'Developed software projects, designed a responsive user interface using HTML, CSS, and JavaScript (Bootstrap), and built the server and business logic using JavaScript (Node.js) and PHP (Laravel).',
                 'company' => 'FREELANCE',
                 'start_date' => '2021-12-01',
-                'end_date' => null, // Saat ini masih bekerja
+                'end_date' => null, // Currently still employed
             ],
             // Add more experiences as needed
         ];

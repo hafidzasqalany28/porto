@@ -71,7 +71,7 @@
                         <h4>{{ $experience['title'] }}</h4>
                         <p>{{ $experience['company'] }}</p>
                         <p>{{ $experience['start_date'] }} - {{ $experience['end_date'] ?: 'Present' }}</p>
-                        <p>{{ $experience['description'] }}</p>
+                        <p style="text-align: left; margin: 0;">{{ $experience['description'] }}</p>
                     </div>
                 </div>
             </div>
@@ -135,17 +135,17 @@
                         <ul class="skill-list">
                             <li class="skill-list-item">JavaScript
                                 <div class="progress skill-progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 75%;"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 55%;"></div>
                                 </div>
                             </li>
                             <li class="skill-list-item">PHP (Laravel)
                                 <div class="progress skill-progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 75%;"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 55%;"></div>
                                 </div>
                             </li>
                             <li class="skill-list-item">Python
                                 <div class="progress skill-progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 75%;"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 55%;"></div>
                                 </div>
                             </li>
                         </ul>
@@ -162,12 +162,12 @@
                         <ul class="skill-list">
                             <li class="skill-list-item">MQTT
                                 <div class="progress skill-progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 70%;"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 50%;"></div>
                                 </div>
                             </li>
                             <li class="skill-list-item">Arduino
                                 <div class="progress skill-progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 70%;"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 50%;"></div>
                                 </div>
                             </li>
                         </ul>
@@ -227,7 +227,7 @@
                     <div class="counter__item">
                         <div class="counter__item__text">
                             <img src="{{ asset('img/icons/ci-1.png') }}" alt="">
-                            <h2 class="counter_num">7</h2>
+                            <h2 class="counter_num">5</h2>
                             <p>Projects Taken</p>
                         </div>
                     </div>
@@ -236,7 +236,7 @@
                     <div class="counter__item second__item">
                         <div class="counter__item__text">
                             <img src="{{ asset('img/icons/ci-2.png') }}" alt="">
-                            <h2 class="counter_num">7</h2>
+                            <h2 class="counter_num">5</h2>
                             <p>Happy clients</p>
                         </div>
                     </div>
@@ -245,7 +245,7 @@
                     <div class="counter__item third__item">
                         <div class="counter__item__text">
                             <img src="{{ asset('img/icons/ci-3.png') }}" alt="">
-                            <h2 class="counter_num">7</h2>
+                            <h2 class="counter_num">5</h2>
                             <p>Perspective clients</p>
                         </div>
                     </div>
@@ -254,7 +254,7 @@
                     <div class="counter__item four__item">
                         <div class="counter__item__text">
                             <img src="{{ asset('img/icons/ci-4.png') }}" alt="">
-                            <h2 class="counter_num">7</h2>
+                            <h2 class="counter_num">5</h2>
                             <p>Completed Projects</p>
                         </div>
                     </div>

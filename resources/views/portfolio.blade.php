@@ -32,8 +32,8 @@ $uniqueCategories = $portfolios->pluck('category')->unique();
                     <div class="portfolio__item__text">
                         <h4><a href="{{ route('portfolio.show', $portfolio->id) }}">{{ $portfolio->title }}</a></h4>
                         <p>Category: {{ $portfolio->category }}</p>
-                        <ul>
-                            <p>{{ $portfolio->description }}</p>
+                        <ul style="text-align: left; text-align-last: left;">
+                            <p>{{ Str::limit($portfolio->description, 150) }}</p>
                             <p>Explore: <a href="{{ $portfolio->website_link }}" target="_blank">{{
                                     $portfolio->website_link }}</a></p>
                             <p>Github: <a href="{{ $portfolio->github_link }}" target="_blank">{{
