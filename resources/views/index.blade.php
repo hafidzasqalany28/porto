@@ -81,13 +81,14 @@
             <div class="col-lg-4">
                 <div class="services__title">
                     <div class="section-title">
-                        <span>My Services</span>
-                        <h2>My Expertise</h2>
+                        <span>My Expertise</span>
+                        <h2>Personal Description</h2>
                     </div>
-                    <p>As a dedicated web developer and IoT enthusiast, I bring a passion for turning complex problems
-                        into simple, beautiful, and intuitive solutions. Whether you need a website developed, IoT
-                        solutions implemented, or both, I am committed to delivering high-quality results that meet your
-                        unique business needs.</p>
+                    <p>Hello, I'm passionate about creating seamless and visually appealing web experiences. My
+                        dedication as a web developer and IoT enthusiast drives me to transform intricate challenges
+                        into simple, beautiful, and intuitive solutions. Whether you require a website developed, IoT
+                        solutions implemented, or a combination of both, I am committed to delivering high-quality
+                        results tailored to meet your unique business needs.</p>
                     <a href="{{ route('services') }}" class="primary-btn">Explore All Services</a>
                 </div>
             </div>
@@ -110,6 +111,7 @@
     </div>
 </section>
 <!-- Services Section End -->
+
 
 <!-- Portfolio Section Begin -->
 <section class="portfolio spad set-bg" data-setbg="img/team.jpg">
@@ -141,6 +143,11 @@
             </div>
             @endforeach
         </div>
+        <div class="col-lg-12 p-5 text-center">
+            <div class="team__btn">
+                <a href="{{ route('portfolio') }}" class="primary-btn">View All Projects</a>
+            </div>
+        </div>
     </div>
 </section>
 <!-- Portfolio Section End -->
@@ -150,38 +157,42 @@
     <div class="container">
         <div class="counter__content">
             <div class="row">
+                <!-- Projects Taken -->
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="counter__item">
                         <div class="counter__item__text">
                             <img src="{{ asset('img/icons/ci-1.png') }}" alt="">
-                            <h2 class="counter_num">5</h2>
+                            <h2 class="counter_num">{{ $portfolioStatistics['projectsTaken'] }}</h2>
                             <p>Projects Taken</p>
                         </div>
                     </div>
                 </div>
+                <!-- Happy clients -->
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="counter__item second__item">
                         <div class="counter__item__text">
                             <img src="{{ asset('img/icons/ci-2.png') }}" alt="">
-                            <h2 class="counter_num">5</h2>
+                            <h2 class="counter_num">{{ $portfolioStatistics['happyClients'] }}</h2>
                             <p>Happy clients</p>
                         </div>
                     </div>
                 </div>
+                <!-- Perspective clients -->
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="counter__item third__item">
                         <div class="counter__item__text">
                             <img src="{{ asset('img/icons/ci-3.png') }}" alt="">
-                            <h2 class="counter_num">5</h2>
+                            <h2 class="counter_num">{{ $portfolioStatistics['perspectiveClients'] }}</h2>
                             <p>Perspective clients</p>
                         </div>
                     </div>
                 </div>
+                <!-- Completed Projects -->
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="counter__item four__item">
                         <div class="counter__item__text">
                             <img src="{{ asset('img/icons/ci-4.png') }}" alt="">
-                            <h2 class="counter_num">5</h2>
+                            <h2 class="counter_num">{{ $portfolioStatistics['completedProjects'] }}</h2>
                             <p>Completed Projects</p>
                         </div>
                     </div>
@@ -191,6 +202,7 @@
     </div>
 </section>
 <!-- Counter Section End -->
+
 
 
 @endsection

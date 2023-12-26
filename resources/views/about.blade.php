@@ -135,17 +135,17 @@
                         <ul class="skill-list">
                             <li class="skill-list-item">JavaScript
                                 <div class="progress skill-progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 55%;"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 80%;"></div>
                                 </div>
                             </li>
                             <li class="skill-list-item">PHP (Laravel)
                                 <div class="progress skill-progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 55%;"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 75%;"></div>
                                 </div>
                             </li>
                             <li class="skill-list-item">Python
                                 <div class="progress skill-progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 55%;"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 75%;"></div>
                                 </div>
                             </li>
                         </ul>
@@ -162,12 +162,12 @@
                         <ul class="skill-list">
                             <li class="skill-list-item">MQTT
                                 <div class="progress skill-progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 50%;"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 80%;"></div>
                                 </div>
                             </li>
                             <li class="skill-list-item">Arduino
                                 <div class="progress skill-progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 50%;"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 80%;"></div>
                                 </div>
                             </li>
                         </ul>
