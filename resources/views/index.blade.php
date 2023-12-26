@@ -12,7 +12,7 @@
                             <span>Welcome to My Portfolio</span>
                             <h2>Hafidz Firman Asqalany</h2>
                             <p>Web Developer | IoT Enthusiast</p>
-                            <a href="{{ route('contact') }}" class="primary-btn">Contant Me</a>
+                            <a href="{{ route('contact') }}" class="primary-btn">Contact Me</a>
                         </div>
                     </div>
                 </div>
@@ -55,17 +55,17 @@
                         <span>About Me</span>
                         <h2>Personal Summary</h2>
                     </div>
-                    <p>I am a graduate of Computer Science from Sepuluh Nopember Institute of Technology, Surabaya, with
-                        an academic achievement index of 3.41. During my academic journey, I gained practical experience
-                        through a 1-month internship at PT. Surabaya Noor Leather as a Front End Programmer. In this
-                        role, I was responsible for updating the company's profile website.</p>
-                    <p>Aside from my internship, I have been actively working as a freelance developer, specializing in
-                        website and IoT project development. My responsibilities include developing and creating entire
-                        software projects according to requirements. On the frontend, I design and implement responsive
-                        and aesthetic user interfaces using technologies like HTML, CSS, and JavaScript (often with
-                        Bootstrap). On the backend, I build and manage servers, databases, and business logic using
-                        programming languages such as JavaScript (Node.js) and PHP, with a preference for the Laravel
-                        framework.</p>
+                    <p>I am a graduate of Computer Science from Sepuluh Nopember Institute of Technology, Surabaya,
+                        with an academic achievement index of 3.41. During my academic journey, I gained practical
+                        experience through a 1-month internship at PT. Surabaya Noor Leather as a Front End
+                        Programmer. In this role, I was responsible for updating the company's profile website.</p>
+                    <p>Aside from my internship, I have been actively working as a freelance developer, specializing
+                        in website and IoT project development. My responsibilities include developing and creating
+                        entire software projects according to requirements. On the frontend, I design and implement
+                        responsive and aesthetic user interfaces using technologies like HTML, CSS, and JavaScript
+                        (often with Bootstrap). On the backend, I build and manage servers, databases, and business
+                        logic using programming languages such as JavaScript (Node.js) and PHP, with a preference
+                        for the Laravel framework.</p>
                     <a href="{{ route('about') }}" class="primary-btn">Learn more about me</a>
                 </div>
             </div>
@@ -85,10 +85,10 @@
                         <h2>Personal Description</h2>
                     </div>
                     <p>Hello, I'm passionate about creating seamless and visually appealing web experiences. My
-                        dedication as a web developer and IoT enthusiast drives me to transform intricate challenges
-                        into simple, beautiful, and intuitive solutions. Whether you require a website developed, IoT
-                        solutions implemented, or a combination of both, I am committed to delivering high-quality
-                        results tailored to meet your unique business needs.</p>
+                        dedication as a web developer and IoT enthusiast drives me to transform intricate
+                        challenges into simple, beautiful, and intuitive solutions. Whether you require a website
+                        developed, IoT solutions implemented, or a combination of both, I am committed to
+                        delivering high-quality results tailored to meet your unique business needs.</p>
                     <a href="{{ route('services') }}" class="primary-btn">Explore All Services</a>
                 </div>
             </div>
@@ -111,7 +111,6 @@
     </div>
 </section>
 <!-- Services Section End -->
-
 
 <!-- Portfolio Section Begin -->
 <section class="portfolio spad set-bg" data-setbg="img/team.jpg">
@@ -202,7 +201,4 @@
     </div>
 </section>
 <!-- Counter Section End -->
-
-
-
 @endsection

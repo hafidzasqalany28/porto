@@ -1,3 +1,23 @@
+@php
+$socialLinks = [
+['url' => 'https://www.facebook.com/hafidzasqalany28/', 'icon' => 'fa fa-facebook'],
+['url' => 'https://twitter.com/HafidzAsqalany', 'icon' => 'fa fa-twitter'],
+['url' => 'https://www.instagram.com/hafidzasqalany/', 'icon' => 'fa fa-instagram'],
+['url' => 'https://wa.me/+6281325088870', 'icon' => 'fa fa-whatsapp'],
+['url' => 'mailto:hafidzasqalany28@email.com', 'icon' => 'fa fa-envelope'],
+['url' => 'https://github.com/hafidzasqalany28', 'icon' => 'fa fa-github'],
+['url' => 'https://www.linkedin.com/in/hafidzasqalany/', 'icon' => 'fa fa-linkedin'],
+];
+
+$skills = ['Web Development', 'Frontend', 'Backend', 'IOT'];
+
+$workLinks = [
+['url' => '#', 'label' => 'Portfolio'],
+['url' => '#', 'label' => 'Projects'],
+['url' => '#', 'label' => 'Blog'],
+];
+@endphp
+
 <!-- Footer Section Begin -->
 <footer class="footer">
     <div class="container">
@@ -13,14 +33,9 @@
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="footer__top__social">
-                        <a href="https://www.facebook.com/hafidzasqalany28/"><i class="fa fa-facebook"></i></a>
-                        <a href="https://twitter.com/HafidzAsqalany"><i class="fa fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/hafidzasqalany/"><i class="fa fa-instagram"></i></a>
-                        <a href="https://wa.me/+6281325088870" target="_blank"><i class="fa fa-whatsapp"></i></a>
-                        <a href="mailto:hafidzasqalany28@email.com"><i class="fa fa-envelope"></i></a>
-                        <a href="https://github.com/hafidzasqalany28" target="_blank"><i class="fa fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/hafidzasqalany/" target="_blank"><i
-                                class="fa fa-linkedin"></i></a>
+                        @foreach($socialLinks as $link)
+                        <a href="{{ $link['url'] }}" target="_blank"><i class="{{ $link['icon'] }}"></i></a>
+                        @endforeach
                     </div>
                 </div>
             </div>
@@ -39,10 +54,9 @@
                     <div class="footer__option__item">
                         <h5>My Skills</h5>
                         <ul>
-                            <li><a href="#">Web Development</a></li>
-                            <li><a href="#">Frontend</a></li>
-                            <li><a href="#">Backend</a></li>
-                            <li><a href="#">IOT</a></li>
+                            @foreach($skills as $skill)
+                            <li><a href="#">{{ $skill }}</a></li>
+                            @endforeach
                         </ul>
                     </div>
                 </div>
@@ -50,9 +64,9 @@
                     <div class="footer__option__item">
                         <h5>My Work</h5>
                         <ul>
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="#">Projects</a></li>
-                            <li><a href="#">Blog</a></li>
+                            @foreach($workLinks as $workLink)
+                            <li><a href="{{ $workLink['url'] }}">{{ $workLink['label'] }}</a></li>
+                            @endforeach
                         </ul>
                     </div>
                 </div>

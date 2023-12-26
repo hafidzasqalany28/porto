@@ -1,3 +1,20 @@
+@php
+$menuItems = [
+['route' => 'home', 'label' => 'Home'],
+['route' => 'about', 'label' => 'About'],
+['route' => 'portfolio', 'label' => 'Portfolio'],
+['route' => 'services', 'label' => 'Services'],
+['route' => 'contact', 'label' => 'Contact'],
+];
+
+$socialLinks = [
+['url' => 'https://wa.me/+6281325088870', 'icon' => 'fa fa-whatsapp'],
+['url' => 'mailto:hafidzasqalany28@email.com', 'icon' => 'fa fa-envelope'],
+['url' => 'https://github.com/hafidzasqalany28', 'icon' => 'fa fa-github'],
+['url' => 'https://www.linkedin.com/in/hafidzasqalany/', 'icon' => 'fa fa-linkedin'],
+];
+@endphp
+
 <!-- Header Section Begin -->
 <header class="header">
     <div class="container">
@@ -5,7 +22,7 @@
             <div class="col-lg-2">
                 <div class="header__logo">
                     <a href="{{ route('home') }}" style="display: flex; align-items: center;">
-                        <img src="img/logo1.png" alt="" style="height: 50px;">
+                        <img src="{{ asset('img/logo1.png') }}" alt="" style="height: 50px;">
                         <span style="margin-left: 10px; font-size: 20px; color: #fff;">hafidzasqalany28</span>
                     </a>
                 </div>
@@ -14,47 +31,18 @@
                 <div class="header__nav__option">
                     <nav class="header__nav__menu mobile-menu">
                         <ul>
-                            <li class="{{ request()->routeIs('home') ? 'active' : '' }}">
-                                <a href="{{ route('home') }}">Home</a>
+                            @foreach($menuItems as $menuItem)
+                            <li class="{{ request()->routeIs($menuItem['route']) ? 'active' : '' }}">
+                                <a href="{{ route($menuItem['route']) }}">{{ $menuItem['label'] }}</a>
                             </li>
-                            <li class="{{ request()->routeIs('about') ? 'active' : '' }}">
-                                <a href="{{ route('about') }}">About</a>
-                            </li>
-                            <li class="{{ request()->routeIs('portfolio') ? 'active' : '' }}">
-                                <a href="{{ route('portfolio') }}">Portfolio</a>
-                            </li>
-                            <li class="{{ request()->routeIs('services') ? 'active' : '' }}">
-                                <a href="{{ route('services') }}">Services</a>
-                            </li>
-                            {{-- <li><a href="#">Pages</a>
-                                <ul class="dropdown">
-                                    <li class="{{ request()->routeIs('about') ? 'active' : '' }}">
-                                        <a href="{{ route('about') }}">About</a>
-                                    </li>
-                                    <li class="{{ request()->routeIs('portfolio') ? 'active' : '' }}">
-                                        <a href="{{ route('portfolio') }}">Portfolio</a>
-                                    </li>
-                                    <li class="{{ request()->routeIs('blog') ? 'active' : '' }}">
-                                        <a href="{{ route('blog') }}">Blog</a>
-                                    </li>
-                                    <li class="{{ request()->routeIs('blog-details') ? 'active' : '' }}">
-                                        <a href="{{ route('blog-details') }}">Blog Details</a>
-                                    </li>
-                                </ul>
-                            </li> --}}
-                            <li class="{{ request()->routeIs('contact') ? 'active' : '' }}">
-                                <a href="{{ route('contact') }}">Contact</a>
-                            </li>
+                            @endforeach
                         </ul>
                     </nav>
                     <div class="header__nav__social">
-                        <a href="https://wa.me/+6281325088870" target="_blank"><i class="fa fa-whatsapp"></i></a>
-                        <a href="mailto:hafidzasqalany28@email.com"><i class="fa fa-envelope"></i></a>
-                        <a href="https://github.com/hafidzasqalany28" target="_blank"><i class="fa fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/hafidzasqalany/" target="_blank"><i
-                                class="fa fa-linkedin"></i></a>
+                        @foreach($socialLinks as $socialLink)
+                        <a href="{{ $socialLink['url'] }}" target="_blank"><i class="{{ $socialLink['icon'] }}"></i></a>
+                        @endforeach
                     </div>
-
                 </div>
             </div>
         </div>
